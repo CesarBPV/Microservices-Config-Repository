@@ -123,9 +123,9 @@ Routes:
             userType: SALESMAN   
         DangerousAcceptAnyServerCertificateValidator: true    
     -    
-        DownstreamPathTemplate: /api/Reports/{everything}
+        DownstreamPathTemplate: /api/Report/{everything}
         DownstreamScheme: http
-        UpstreamPathTemplate: /api/Reports/{everything}
+        UpstreamPathTemplate: /api/Report/{everything}
         ServiceName: Microservices.Demo.Report.API
         UpstreamHttpMethod: 
             - Get
@@ -139,9 +139,9 @@ Routes:
             userType: SALESMAN      
         DangerousAcceptAnyServerCertificateValidator: true
     -
-        DownstreamPathTemplate: /api/Reports
+        DownstreamPathTemplate: /api/Report
         DownstreamScheme: http
-        UpstreamPathTemplate: /api/Reports
+        UpstreamPathTemplate: /api/Report
         ServiceName: Microservices.Demo.Report.API
         UpstreamHttpMethod:
             - Get
